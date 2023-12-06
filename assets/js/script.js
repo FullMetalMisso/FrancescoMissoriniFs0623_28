@@ -22,6 +22,7 @@ sfogliaLibri.innerHTML = ""
 
 libri.forEach((libro) => {
     sfogliaLibri.innerHTML += `
+    <div class="col">
         <div class="card" style="width: 18rem;">
             <img src="${libro.img}" class="card-img-top" alt="${libro.title}">
             <div class="card-body">
@@ -29,6 +30,7 @@ libri.forEach((libro) => {
                 <p class="card-text">${libro.category}</p>
                 <a href="#" class="btn btn-primary">Aggiungi al carrello</a>
                 <a href="#" class="btn btn-danger" onclick="libriAlRogo(event)">Scarta</a>
+            </div>
             </div>
         </div>`;
 });
